@@ -1,4 +1,4 @@
-Minimal single-user face recognition MVP using Google Cloud Vision for face detection
+single-user face recognition  using Google Cloud Vision for face detection
 and landmark feature extraction. Known-face encodings are computed from face landmarks
 and attributes and stored locally. New images or webcam frames are sent to Vision, encoded,
 and compared to known encodings using cosine similarity.
@@ -16,4 +16,5 @@ Usage examples:
  - Recognize a single image:
      python face_mvp.py --input test.jpg --encodings encodings.npz --credentials /path/key.json
  - Run webcam (press 'q' to quit, 's' to force-check current frame):
+   
      python face_mvp.py --input webcam --encodings encodings.npz --credentials /path/key.json
